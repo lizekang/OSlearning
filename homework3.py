@@ -41,7 +41,7 @@ def diff_proc(new_proc, old_proc):
 
 def get_proc():
     proc_list = []
-    for filename in os.listdir("/proc")
+    for filename in os.listdir("/proc"):
         filepath = os.path.join("/proc", filename)
         if Proc.check_proc(filename):
             pid = int(filename)
