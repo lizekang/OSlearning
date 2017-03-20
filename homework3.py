@@ -57,8 +57,8 @@ def get_proc():
 
 def format_output_create_proc(procs, fd):
     for proc in procs:
-        if os.path.exists("/proc/{}/stat", "r"):
-            stat = open("/proc/{}/stat", "r")
+        if os.path.exists("/proc/{}/stat".format(proc.pid), "r"):
+            stat = open("/proc/{}/stat".format(proc.pid), "r")
         else:
             continue
 
