@@ -21,9 +21,6 @@ class Proc(object):
             return pid
         return False
 
-    def __iter__(self):
-        return self.pid
-
 
 def diff_proc(new_proc, old_proc):
     create_list = list()
